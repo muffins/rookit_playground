@@ -1,12 +1,5 @@
-﻿Build started 4/1/2014 10:16:41 AM.
-     1>Project "D:\Library\Nick\Dropbox\github\rookit_playground\keylogger\keylogger\keylogger.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt keylogger.cpp
-         keylogger.cpp
-     1>d:\library\nick\dropbox\github\rookit_playground\keylogger\keylogger\keylogger.cpp(36): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
-     1>Done Building Project "D:\Library\Nick\Dropbox\github\rookit_playground\keylogger\keylogger\keylogger.vcxproj" (Build target(s)) -- FAILED.
+﻿Build started 4/1/2014 12:37:27 PM.
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.22
+Time Elapsed 00:00:00.01
