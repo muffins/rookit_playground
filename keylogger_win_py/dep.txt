@@ -1,0 +1,2 @@
+win32api - http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/
+pyHook - http://sourceforge.net/projects/pyhook/

